@@ -1,4 +1,4 @@
-# DeltaBest
+# Weird Route
 
 Pass your personal best on a level and DELTARUNE's "Weird Route" jingle plays, right as you cross it.
 
