@@ -30,6 +30,8 @@ Only needed if you're changing the code.
 
 "Weird Route" jingle from DELTARUNE, made by Toby Fox. All rights to the audio are his.
 
+Idea for the mod comes from [reverie](https://x.com/____reveriee/status/2105558596239163459).
+
 ## License
 
 Code here is MIT licensed, see [LICENSE](LICENSE). The jingle is not covered by that license.

@@ -7,3 +7,5 @@ Pass your personal best on a level and DELTARUNE's "Weird Route" jingle plays, r
 
 ### Credits
 "Weird Route" jingle from DELTARUNE, made by Toby Fox. All rights to the audio are his.
+
+Idea from reverie (x.com/____reveriee).

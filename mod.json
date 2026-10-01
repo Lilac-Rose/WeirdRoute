@@ -12,6 +12,7 @@
 	"developer": "Lilac Aria Rose",
 	"description": "Plays the DELTARUNE \"Weird Route\" jingle whenever you beat your personal best on a level.",
 	"repository": "https://github.com/Lilac-Rose/WeirdRoute",
+	"tags": ["joke", "music"],
 	"resources": {
 		"files": [
 			"resources/weird-route.ogg"
