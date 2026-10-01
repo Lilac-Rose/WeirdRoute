@@ -8,7 +8,7 @@ It hooks `PlayLayer::updateProgressbar`, which runs every frame during gameplay,
 
 ## Install
 
-Grab the `.geode` file from the [latest release](https://github.com/Lilac-Rose/DeltaBest/releases/latest) and drop it in your Geode `mods` folder. That's it.
+Grab the `.geode` file from the [latest release](https://github.com/Lilac-Rose/WeirdRoute/releases/latest) and drop it in your Geode `mods` folder. That's it.
 
 ## Building from source
 
