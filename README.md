@@ -4,7 +4,7 @@ A [Geode](https://geode-sdk.org/) mod for Geometry Dash. Pass your personal best
 
 ## How it works
 
-It hooks `PlayLayer::updateProgressbar`, which runs every frame during gameplay, and compares your live percent against the level's saved best (`GJGameLevel::m_normalPercent`). As soon as you pass it, even mid-percent, the jingle plays through `FMODAudioEngine`. It only fires once per attempt, skips practice mode, and won't go off on a level you've never gotten a percent on yet. Jingle volume can be adjusted in the mod's settings.
+It hooks `PlayLayer::updateProgressbar`, which runs every frame during gameplay, and compares your live percent against the level's saved best (`GJGameLevel::m_normalPercent`). As soon as you pass it, the jingle plays through `FMODAudioEngine`. Jingle volume can be adjusted in the mod's settings.
 
 ## Install
 
