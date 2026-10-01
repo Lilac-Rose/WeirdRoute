@@ -1,0 +1,7 @@
+build/
+.vs/
+.vscode/
+.idea/
+*.geode
+CMakeUserPresets.json
+weird-route.ogg
