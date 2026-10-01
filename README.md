@@ -4,7 +4,7 @@ A [Geode](https://geode-sdk.org/) mod for Geometry Dash. Pass your personal best
 
 ## How it works
 
-It hooks `PlayLayer::updateProgressbar`, which runs every frame during gameplay, and compares your live percent against the level's saved best (`GJGameLevel::m_normalPercent`). As soon as you pass it, the jingle plays through `FMODAudioEngine`. Jingle volume can be adjusted in the mod's settings.
+It hooks `PlayLayer::updateProgressbar` and compares your percent against the level's saved best. As soon as you pass it, the jingle plays. Jingle volume can be adjusted in the mod's settings.
 
 ## Install
 
@@ -28,7 +28,7 @@ Only needed if you're changing the code.
 
 ## Credits
 
-"Weird Route" jingle from DELTARUNE, made by Toby Fox. All rights to the audio are his.
+"Weird Route" jingle from DELTARUNE, made by Toby Fox.
 
 Idea for the mod comes from [reverie](https://x.com/____reveriee/status/2105558596239163459).
 

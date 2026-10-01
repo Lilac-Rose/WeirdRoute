@@ -21,10 +21,7 @@ class $modify(DeltaBestPlayLayer, PlayLayer) {
 		if (m_fields->m_playedThisAttempt || m_isPracticeMode || !m_level) {
 			return;
 		}
-
-		// A level with no recorded best yet (0%) shouldn't trigger on your
-		// very first attempt, so it only fires once there's an actual best
-		// to beat.
+		
 		auto best = static_cast<float>(m_level->m_normalPercent.value());
 		if (best > 0.f && this->getCurrentPercent() > best) {
 			m_fields->m_playedThisAttempt = true;
