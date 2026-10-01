@@ -1,9 +1,9 @@
 # DeltaBest
 
-Beat your personal best on a level and you'll hear DELTARUNE's "Weird Route" jingle play, just like discovering a secret path.
+Pass your personal best on a level and DELTARUNE's "Weird Route" jingle plays, right as you cross it.
 
 ### Settings
-- **Jingle Volume** — adjust how loud the jingle plays relative to the game's SFX volume.
+- **Jingle Volume**: how loud the jingle plays relative to the game's SFX volume.
 
-### Credit
-Jingle from DELTARUNE by Toby Fox. This mod does not redistribute any of the game's assets — you provide your own copy of the audio file locally.
+### Credits
+"Weird Route" jingle from DELTARUNE, made by Toby Fox. All rights to the audio are his.
