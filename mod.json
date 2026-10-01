@@ -15,7 +15,8 @@
 	"tags": ["joke", "music"],
 	"resources": {
 		"files": [
-			"resources/weird-route.ogg"
+			"resources/weird-route.ogg",
+			"resources/weird-route-reversed.ogg"
 		]
 	},
 	"settings": {
@@ -29,6 +30,12 @@
 			"control": {
 				"slider": true
 			}
+		},
+		"reversed_weird_route_on_complete": {
+			"name": "Reversed Jingle on Complete",
+			"description": "Whether or not the jingle should play reversed on level complete",
+			"type": "bool",
+			"default": true
 		}
 	}
 }
