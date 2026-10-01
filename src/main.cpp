@@ -36,7 +36,8 @@ class $modify(DeltaBestPlayLayer, PlayLayer) {
 			return;
 		}
 
-		auto best = static_cast<float>(m_level->m_normalPercent.value());
+		auto best = static_cast<int>(m_level->m_normalPercent.value());
+		geode::log::info("best={} current={} attempts={}", best, this->getCurrentPercent(), m_level->m_attempts.value());
 		if (best > 0.f && this->getCurrentPercent() > best) {
 			m_fields->m_playedThisAttempt = true;
 
