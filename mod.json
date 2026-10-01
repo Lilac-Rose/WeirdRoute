@@ -1,5 +1,5 @@
 {
-	"geode": "4.0.0",
+	"geode": "5.10.1",
 	"gd": {
 		"win": "2.2081",
 		"android": "2.2081",
@@ -9,7 +9,7 @@
 	"id": "lilacrose.deltabest",
 	"name": "DeltaBest",
 	"version": "v1.0.0",
-	"developer": "LilacRose",
+	"developer": "Lilac Aria Rose",
 	"description": "Plays the DELTARUNE \"Weird Route\" jingle whenever you beat your personal best on a level.",
 	"repository": "https://github.com/Lilac-Rose/DeltaBest",
 	"resources": {
