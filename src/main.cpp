@@ -1,19 +1,41 @@
 #include <Geode/Geode.hpp>
 #include <Geode/modify/PlayLayer.hpp>
 #include <Geode/binding/FMODAudioEngine.hpp>
+#include <Geode/binding/GJGameLevel.hpp>
 
 using namespace geode::prelude;
 
 class $modify(DeltaBestPlayLayer, PlayLayer) {
-	void showNewBest(bool newReward, int orbs, int diamonds, bool demonKey, bool noRetry, bool noTitle) {
-		PlayLayer::showNewBest(newReward, orbs, diamonds, demonKey, noRetry, noTitle);
+	struct Fields {
+		bool m_playedThisAttempt = false;
+	};
 
-		auto volume = Mod::get()->getSettingValue<double>("volume");
-		FMODAudioEngine::sharedEngine()->playEffect(
-			"weird-route.ogg"_spr,
-			1.0f,
-			1.0f,
-			static_cast<float>(volume)
-		);
+	void resetLevel() {
+		PlayLayer::resetLevel();
+		m_fields->m_playedThisAttempt = false;
+	}
+
+	void updateProgressbar() {
+		PlayLayer::updateProgressbar();
+
+		if (m_fields->m_playedThisAttempt || m_isPracticeMode || !m_level) {
+			return;
+		}
+
+		// A level with no recorded best yet (0%) shouldn't trigger on your
+		// very first attempt, so it only fires once there's an actual best
+		// to beat.
+		auto best = static_cast<float>(m_level->m_normalPercent.value());
+		if (best > 0.f && this->getCurrentPercent() > best) {
+			m_fields->m_playedThisAttempt = true;
+
+			auto volume = Mod::get()->getSettingValue<double>("volume");
+			FMODAudioEngine::sharedEngine()->playEffect(
+				"weird-route.ogg"_spr,
+				1.0f,
+				1.0f,
+				static_cast<float>(volume)
+			);
+		}
 	}
 };
