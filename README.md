@@ -1,4 +1,4 @@
-# DeltaBest
+# Weird Route
 
 A [Geode](https://geode-sdk.org/) mod for Geometry Dash. Pass your personal best on a level and it plays DELTARUNE's "Weird Route" jingle, right as you cross it.
 
